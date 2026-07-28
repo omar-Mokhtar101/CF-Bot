@@ -26,7 +26,7 @@ jobs:
       - name: Run notifier
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          REMIND_WINDOW_HOURS: "48"
+          REMIND_WINDOW_HOURS: "100000"
         run: python notify.py
 
       - name: Commit updated state

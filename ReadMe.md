@@ -17,11 +17,3 @@ pip install -r requirements.txt
 export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..."
 python notify.py
 ```
-
-## Extending later
-
-The script is intentionally scoped to contest reminders only. If you
-later want rating-change or submission tracking for a specific handle,
-those need a different Codeforces endpoint (`user.rating` /
-`user.status`) and a different dedupe strategy — happy to add that as a
-separate script when you're ready.
